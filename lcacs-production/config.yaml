@@ -1,0 +1,12 @@
+lcacs_tuning:
+  alpha: 1.0
+  beta: 0.5
+training:
+  epochs: 5
+  learning_rate: 0.01
+data:
+  file_name: "dataset.csv"
+  total_samples: 1000
+output:
+  model_dir: "models"
+  export_zip: "lcacs_final_model"

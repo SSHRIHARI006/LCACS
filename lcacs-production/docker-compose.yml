@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  worker_1:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./data:/app/data
+    environment:
+      - WORKER_ID=1
+      - COMPUTE_POWER=2.0
+      - BANDWIDTH=10.0
+    ports:
+      - "8001:8000"
+
+  worker_2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./data:/app/data
+    environment:
+      - WORKER_ID=2
+      - COMPUTE_POWER=0.5
+      - BANDWIDTH=2.0
+    ports:
+      - "8002:8000"

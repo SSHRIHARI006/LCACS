@@ -1,0 +1,12 @@
+# Ignore Python virtual environments
+venv/
+.venv/
+env/
+LCACS-Docker/
+
+# Ignore Git
+.git/
+
+# Ignore cache
+__pycache__/
+*.pyc

@@ -1,0 +1,10 @@
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.venv/
+lcacs-production/data/
+lcacs-production/models/
+lcacs-production/lcacs_final_model.zip
